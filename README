@@ -1,0 +1,6 @@
+Updated by Mei Xue on 9/15/2011
+
+Here are the version 1 rspec test code for using sauce on demand.  
+
+RUMTest4Java.rb is for testing a Java app with varies browsers 
+RUMTest4Ruby.rb is for testing a RubyonRails app with varies browsers
