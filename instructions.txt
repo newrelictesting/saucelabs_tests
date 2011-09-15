@@ -1,0 +1,31 @@
+The Java and Ruby test apps are running in EC2 
+(http://ec2-50-16-120-67.compute-1.amazonaws.com:8080/RUMTestJavaApp, or http://ec2-50-16-120-67.compute-1.amazonaws.com:8000/rums respectively)
+
+
+Note: you are welcome to check out the RUMTestJavaApp or RUMTestRubyApp source code and enhance them.  Otherwise, simply check out the RUMTest4Java.rb or RUMTest4Ruby.rb and follow the 3 steps to run the saucelabs tests and see the results
+
+
+
+Install sauce and rspec gems if you haven't done so
+
+From a terminal:
+
+      $ gem install sauce
+      $ gem install rspec -v 1.3.1
+      
+
+Run the sauce labs cross browser testing:
+
+1. Configure your Sauce OnDemand credentails
+
+$ sauce config newrelic_rumtesting 0fc2d7fa-6a80-4cc3-86fd-829e40c4a0a5
+
+2. Start the test
+$ spec _1.3.1_ RUMTest4Java.rb
+or
+$ spec _1.3.1_ RUMTest4Ruby.rb
+
+3. Check the test result
+Open a broswer, go to Saucelabs.com, login as newrelic_rumtesting/4maline. The test should now appear in the jobs page.
+
+
